@@ -286,8 +286,10 @@ function createProductCard(product) {
       <h3>${product.name}</h3>
       <p class="price">$${product.price.toFixed(2)}</p>
       <p class="category">${formatCategory(product.category)}</p>
-      <a href="product-detail.html?id=${product.id}" class="btn">View Details</a>
-      <button class="btn add-to-cart-btn" data-product-id="${product.id}">Add to Cart</button>
+      <div class="button-group">
+        <button class="btn add-to-cart-btn" data-product-id="${product.id}">Add to Cart</button>
+        <button class="btn view-btn" data-product-id="${product.id}">View</button>
+      </div>
     </div>
   `;
 
