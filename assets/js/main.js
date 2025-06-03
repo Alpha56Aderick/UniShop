@@ -287,9 +287,23 @@ function createProductCard(product) {
       <p class="price">$${product.price.toFixed(2)}</p>
       <p class="category">${formatCategory(product.category)}</p>
       <a href="product-detail.html?id=${product.id}" class="btn">View Details</a>
+      <button class="btn add-to-cart-btn" data-product-id="${product.id}">Add to Cart</button>
     </div>
   `;
+
+  // Add event listener for Add to Cart button
+  const addToCartBtn = card.querySelector('.add-to-cart-btn');
+  addToCartBtn.addEventListener('click', () => {
+    addToCart(product.id);
+  });
+
   return card;
+}
+
+// Placeholder addToCart function if not defined elsewhere
+function addToCart(productId) {
+  console.log(`Add to Cart clicked for product ID: ${productId}`);
+  // TODO: Implement actual add to cart functionality or call existing cart functions
 }
 
 // Format category for display
