@@ -28,7 +28,7 @@ const products = [
     description: "Complete IoT development kit with case, power supply and accessories",
     category: "electronic-tools",
     subcategory: "kits",
-    image: "assets/images/raspberry-pi-kit.jpg",
+    image: "assets/image/rasberry pi kit.png",
     tags: ["computer-science", "electronics"]
   },
   {
@@ -211,7 +211,6 @@ const products = [
   }
 ];
 
-// DOM Content Loaded - Initialize the page
 document.addEventListener('DOMContentLoaded', function() {
   // Load products based on page type
   if (document.querySelector('.featured-products .product-grid')) {
@@ -226,14 +225,33 @@ document.addEventListener('DOMContentLoaded', function() {
     loadProductDetails();
   }
 
-// Initialize category filter if exists
-const categoryFilterForm = document.getElementById('category-filter-form');
-if (categoryFilterForm) {
-  const radios = categoryFilterForm.querySelectorAll('input[name="category"]');
-  radios.forEach(radio => {
-    radio.addEventListener('click', filterProducts);
-  });
-}
+  // Initialize category filter if exists
+  const categoryFilterForm = document.getElementById('category-filter-form');
+  if (categoryFilterForm) {
+    const radios = categoryFilterForm.querySelectorAll('input[name="category"]');
+    radios.forEach(radio => {
+      radio.addEventListener('click', filterProducts);
+    });
+  }
+
+  // Initialize quantity counter on product detail page
+  const minusBtn = document.getElementById('minus-btn');
+  const addBtn = document.getElementById('add-btn');
+  const quantityInput = document.getElementById('quantity');
+
+  if (minusBtn && addBtn && quantityInput) {
+    minusBtn.addEventListener('click', () => {
+      let currentValue = parseInt(quantityInput.value);
+      if (currentValue > 1) {
+        quantityInput.value = currentValue - 1;
+      }
+    });
+
+    addBtn.addEventListener('click', () => {
+      let currentValue = parseInt(quantityInput.value);
+      quantityInput.value = currentValue + 1;
+    });
+  }
 });
 
 /* ======================
@@ -280,15 +298,15 @@ function formatCategory(category) {
   return formatted.charAt(0).toUpperCase() + formatted.slice(1);
 }
 
-// Filter products by category
 function filterProducts() {
-  const category = document.getElementById('category-filter').value;
+  const categoryFilterForm = document.getElementById('category-filter-form');
+  const selectedCategory = categoryFilterForm.querySelector('input[name="category"]:checked').value;
   const productGrid = document.querySelector('.products .product-grid');
   productGrid.innerHTML = '';
   
-  const filtered = category === 'all' 
+  const filtered = selectedCategory === 'all' 
     ? products 
-    : products.filter(p => p.category === category || p.subcategory === category);
+    : products.filter(p => p.category === selectedCategory || p.subcategory === selectedCategory);
   
   filtered.forEach(product => {
     productGrid.appendChild(createProductCard(product));
