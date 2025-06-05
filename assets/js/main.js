@@ -11,6 +11,16 @@ const products = [
     image: "assets/images/laptop-coding.jpg",
     tags: ["computer-science", "best-seller"]
   },
+   {
+    id: 1,
+    name: "Lab coat",
+    price: 20002,
+    description: "A white coat for laboratory safety",
+    category: "lab-requirements",
+    subcategory: "laptops",
+    image: "assets/image/rasberry pi kit.png",
+    tags: ["computer-science", "best-seller"]
+  },
   {
     id: 2,
     name: "Mechanical Keyboard (Keychron K8)",
