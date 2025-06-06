@@ -4,7 +4,7 @@ const products = [
   {
     id: 1,
     name: "Programming Laptop (Dell XPS 15)",
-    price: 1299.99,
+    price: 3000000,
     description: "Intel i7, 16GB RAM, 512GB SSD - Ideal for coding and machine learning",
     category: "computers",
     subcategory: "laptops",
@@ -14,7 +14,7 @@ const products = [
    {
     id: 1,
     name: "Lab coat",
-    price: 20002,
+    price: 460000,
     description: "A white coat for laboratory safety",
     category: "lab-requirements",
     subcategory: "laptops",
@@ -24,7 +24,7 @@ const products = [
   {
     id: 2,
     name: "Mechanical Keyboard (Keychron K8)",
-    price: 89.99,
+    price: 210000,
     description: "Tenkeyless mechanical keyboard with RGB lighting for programmers",
     category: "computers",
     subcategory: "accessories",
@@ -34,7 +34,7 @@ const products = [
   {
     id: 3,
     name: "Raspberry Pi 4 Starter Kit",
-    price: 119.99,
+    price: 280000,
     description: "Complete IoT development kit with case, power supply and accessories",
     category: "electronic-tools",
     subcategory: "kits",
@@ -51,12 +51,11 @@ const products = [
     image: "assets/images/github-pack.jpg",
     tags: ["computer-science", "free"]
   },
-
   // B. Civil Engineering
   {
     id: 5,
     name: "Engineering Drafting Kit",
-    price: 45.50,
+    price: 105000,
     description: "Complete set with compass, protractor, and technical pens",
     category: "workshop-tools",
     subcategory: "drafting",
@@ -66,11 +65,11 @@ const products = [
   {
     id: 6,
     name: "Construction Hard Hat",
-    price: 24.99,
+    price: 58000,
     description: "ANSI-approved safety helmet with adjustable harness",
     category: "safety-gear",
     subcategory: "construction",
-    image: "assets/images/hard-hat.jpg",
+    image: "assets/images/hard hat.jpg",
     tags: ["civil-engineering"]
   },
   {
@@ -86,19 +85,18 @@ const products = [
   {
     id: 8,
     name: "Laser Distance Measurer",
-    price: 59.99,
+    price: 138000,
     description: "Digital laser measure with 100ft range for site surveys",
     category: "workshop-tools",
     subcategory: "measurement",
     image: "assets/images/laser-measurer.jpg",
     tags: ["civil-engineering"]
   },
-
   // C. Laboratory Science
   {
     id: 9,
     name: "Lab Coat (Polyester Cotton)",
-    price: 29.99,
+    price: 69000,
     description: "White lab coat with knit cuffs and snap buttons",
     category: "lab-requirements",
     subcategory: "safety",
@@ -108,7 +106,7 @@ const products = [
   {
     id: 10,
     name: "Chemistry Glassware Set",
-    price: 89.99,
+    price: 210000,
     description: "24-piece set with beakers, flasks and graduated cylinders",
     category: "lab-requirements",
     subcategory: "glassware",
@@ -118,7 +116,7 @@ const products = [
   {
     id: 11,
     name: "Digital pH Meter",
-    price: 49.99,
+    price: 115000,
     description: "Precision pH tester with ATC and replaceable electrode",
     category: "lab-requirements",
     subcategory: "instruments",
@@ -128,19 +126,18 @@ const products = [
   {
     id: 12,
     name: "Molecular Model Kit",
-    price: 32.99,
+    price: 76000,
     description: "126-piece organic chemistry modeling set",
     category: "reference-materials",
     subcategory: "kits",
     image: "assets/images/molecular-kit.jpg",
     tags: ["laboratory-science"]
   },
-
   // D. Mechanical Engineering
   {
     id: 13,
     name: "Digital Caliper (0-6in)",
-    price: 25.99,
+    price: 60000,
     description: "Stainless steel vernier caliper with LCD display",
     category: "workshop-tools",
     subcategory: "measurement",
@@ -150,7 +147,7 @@ const products = [
   {
     id: 14,
     name: "SolidWorks Student License",
-    price: 99.99,
+    price: 230000,
     description: "1-year license for mechanical design software",
     category: "software",
     subcategory: "cad",
@@ -160,7 +157,7 @@ const products = [
   {
     id: 15,
     name: "3D Printing Filament (PLA, 1kg)",
-    price: 22.99,
+    price: 53000,
     description: "1.75mm diameter filament for prototyping",
     category: "workshop-tools",
     subcategory: "3d-printing",
@@ -170,19 +167,18 @@ const products = [
   {
     id: 16,
     name: "Thermodynamics Lab Kit",
-    price: 149.99,
+    price: 345000,
     description: "Complete heat transfer experiment set",
     category: "lab-requirements",
     subcategory: "mechanical",
     image: "assets/images/thermo-kit.jpg",
     tags: ["mechanical-engineering"]
   },
-
   // E. Electrical & Electronics
   {
     id: 17,
     name: "Digital Multimeter",
-    price: 39.99,
+    price: 80000,
     description: "Auto-ranging multimeter with continuity test",
     category: "electronic-tools",
     subcategory: "measurement",
@@ -192,7 +188,7 @@ const products = [
   {
     id: 18,
     name: "Arduino Uno Starter Kit",
-    price: 79.99,
+    price: 165000,
     description: "Includes Uno board, sensors, and tutorial",
     category: "electronic-tools",
     subcategory: "kits",
@@ -202,7 +198,7 @@ const products = [
   {
     id: 19,
     name: "Soldering Iron Station",
-    price: 54.99,
+    price: 114000,
     description: "60W adjustable temperature soldering kit",
     category: "electronic-tools",
     subcategory: "tools",
@@ -212,7 +208,7 @@ const products = [
   {
     id: 20,
     name: "Breadboard Jumper Wires (140pc)",
-    price: 12.99,
+    price: 27000,
     description: "Assorted lengths for circuit prototyping",
     category: "electronic-tools",
     subcategory: "components",
