@@ -80,7 +80,7 @@ function loadCartItems() {
             <div class="cart-item-image" style="background-image: url('${item.image}')"></div>
             <div class="cart-item-details">
                 <h3>${item.name}</h3>
-                <p class="cart-item-price">$${item.price.toFixed(2)}</p>
+            <p class="cart-item-price">Tsh${item.price.toFixed(2)}</p>
             </div>
             <div class="cart-item-quantity">
                 <button class="quantity-btn minus">-</button>
@@ -166,16 +166,16 @@ function updateCartTotals() {
     
     // Update on cart page
     if (document.getElementById('subtotal')) {
-        document.getElementById('subtotal').textContent = `$${subtotal.toFixed(2)}`;
-        document.getElementById('shipping').textContent = `$${shipping.toFixed(2)}`;
-        document.getElementById('total').textContent = `$${total.toFixed(2)}`;
+        document.getElementById('subtotal').textContent = `Tsh${subtotal.toFixed(2)}`;
+        document.getElementById('shipping').textContent = `Tsh${shipping.toFixed(2)}`;
+        document.getElementById('total').textContent = `Tsh${total.toFixed(2)}`;
     }
     
     // Update on checkout page
     if (document.getElementById('checkout-subtotal')) {
-        document.getElementById('checkout-subtotal').textContent = `$${subtotal.toFixed(2)}`;
-        document.getElementById('checkout-shipping').textContent = `$${shipping.toFixed(2)}`;
-        document.getElementById('checkout-total').textContent = `$${total.toFixed(2)}`;
+        document.getElementById('checkout-subtotal').textContent = `Tsh${subtotal.toFixed(2)}`;
+        document.getElementById('checkout-shipping').textContent = `Tsh${shipping.toFixed(2)}`;
+        document.getElementById('checkout-total').textContent = `Tsh${total.toFixed(2)}`;
     }
 }
 
@@ -189,7 +189,7 @@ function loadOrderSummary() {
         summaryItem.className = 'summary-item';
         summaryItem.innerHTML = `
             <span>${item.name} (${item.quantity})</span>
-            <span>$${(item.price * item.quantity).toFixed(2)}</span>
+            <span>Tsh${(item.price * item.quantity).toFixed(2)}</span>
         `;
         summaryItems.appendChild(summaryItem);
     });
